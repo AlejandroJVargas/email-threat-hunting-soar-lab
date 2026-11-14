@@ -115,3 +115,5 @@ playbook/       SOAR exports, diagram, screenshots
 docs/           Findings and incident report
 data/           Lab data (provided)
 ```
+
+> **Note:** unzip `data/emails_30d.zip` before running the scripts (the CSV is 27 MB, over GitHub's upload limit).
