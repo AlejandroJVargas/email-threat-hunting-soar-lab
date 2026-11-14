@@ -1,6 +1,6 @@
 import csv 
 import re
-from unittest import signals
+
 
 
 def get_domain(email_address):
@@ -56,12 +56,12 @@ def get_score(signals):
 
 
 def get_decision(score):
-    if score >= (45):        # blank 1: your red line
+    if score >= (45):        
         return "block"
-    elif score >= (20):      # blank 2: your yellow line
+    elif score >= (20):      
         return "analyst"
     else:
-        return "allow"    # blank 3
+        return "allow"    
     
 
 
