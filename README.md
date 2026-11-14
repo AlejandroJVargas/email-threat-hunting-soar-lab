@@ -50,7 +50,6 @@ You receive **30 days of mail gateway logs (~99,000 emails)**, a set of raw `.em
 | `filter_verdict` | What the **current** filter decided: `clean`, `spam`, `quarantine` |
 | `user_reported` | Whether the recipient reported it as suspicious |
 
-**Important:** `filter_verdict` is the filter's opinion, **not** the truth. Your job is to find where it's wrong.
 
 ---
 
