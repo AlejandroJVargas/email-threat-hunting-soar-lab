@@ -57,7 +57,6 @@ Write `src/parse_eml.py` that reads every file in `data/eml_samples/` and output
 
 Then add **red-flag checks**: Reply-To domain ≠ From domain, Return-Path domain ≠ From domain, display name mentions a brand the domain doesn't belong to, link text ≠ link target, risky attachment types.
 
-*Hints:* Python's `email` module (`email.message_from_binary_file`, `policy.default`), `re`, `hashlib`, `base64`.
 
 ### Phase 2: Hunt in 99,000 emails (SQL / Splunk / Python) — 1 week
 
@@ -71,7 +70,6 @@ Answer, with queries saved in `queries/`:
 4. Which **legitimate** mail did the filter block? (false positives)
 5. Which hosts/users are most at risk (e.g. who received the most malicious mail)?
 
-*Hints:* group by subject and count distinct sender domains; look at domain age, send hour, Reply-To, URL paths, attachment types, DMARC results. Not every burst is an attack, and not every new domain is malicious.
 
 ### Phase 3: Enrich and score — 1 week
 
