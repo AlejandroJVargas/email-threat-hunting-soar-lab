@@ -1,18 +1,10 @@
 # Email Threat Hunting & Phishing Triage Automation Lab
 
-**Scenario:** You are a SOC analyst at **Lumenfield** (fictional company, `lumenfield.com`, ~420 employees, Córdoba, Argentina).
+**Scenario:** I'm a SOC analyst at **Lumenfield** (fictional company, `lumenfield.com`, ~420 employees, Córdoba, Argentina).
 Several employees reported suspicious emails during October 2026, and the finance team is worried about a supplier payment.
 Management suspects the current email filter is missing attacks.
 
-You receive **30 days of mail gateway logs (~99,000 emails)**, a set of raw `.eml` samples, and offline threat-intelligence data.
-
-**Your mission:**
-
-1. Find every attack campaign hidden in the data.
-2. Measure what the current filter missed (false negatives) and what it wrongly blocked (false positives).
-3. Build detections that catch the campaigns **without** blocking legitimate mail.
-4. Automate the triage as a SOAR-style playbook.
-5. Write the incident report.
+I receive **30 days of mail gateway logs (~99,000 emails)**, a set of raw `.eml` samples, and offline threat-intelligence data.
 
 > All companies, people, domains and IPs in this lab are fictional or used as illustrative examples.
 > Attachments are harmless placeholders. Threat-intel files are **simulated** (offline), so you don't need real API keys.
@@ -53,10 +45,6 @@ You receive **30 days of mail gateway logs (~99,000 emails)**, a set of raw `.em
 
 ---
 
-## Phases
-
-Do them in order. Each phase is a portfolio piece on its own.
-
 ### Phase 1: Parse raw emails (Python) — 1 week
 
 Write `src/parse_eml.py` that reads every file in `data/eml_samples/` and outputs one JSON object per email with:
@@ -90,7 +78,6 @@ Answer, with queries saved in `queries/`:
 Build `src/enrich_score.py`: for each email (or each sender domain), join the threat-intel files and calculate a **risk score** from signals you choose and weight. Example signals: domain age, privacy-protected WHOIS, URL reputation, Reply-To mismatch, DMARC fail, risky attachment, night-time sending, display-name brand mismatch.
 
 Output a scored CSV and decide thresholds: **block**, **send to analyst**, **allow**.
-Document why you chose each weight.
 
 ### Phase 4: Detections (Splunk SPL + regex) — 1 week
 
@@ -104,7 +91,6 @@ For each rule, measure on the dataset:
 | True positives / False positives | You'll validate these with your hunting results (and Claude has the answer key) |
 | What it misses | Be honest |
 
-Tune thresholds and allowlists until false positives are low.
 
 ### Phase 5: SOAR playbook — 1 week
 
@@ -116,8 +102,6 @@ User reports email → parse (Phase 1) → enrich + score (Phase 3)
    → score medium: open ticket for an analyst
    → score low   : reply to the user "looks safe", log it
 ```
-
-Document the playbook with a diagram and screenshots.
 
 ### Phase 6: Report
 
