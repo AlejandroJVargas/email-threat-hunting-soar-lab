@@ -7,7 +7,7 @@ Management suspects the current email filter is missing attacks.
 I receive **30 days of mail gateway logs (~99,000 emails)**, a set of raw `.eml` samples, and offline threat-intelligence data.
 
 > All companies, people, domains and IPs in this lab are fictional or used as illustrative examples.
-> Attachments are harmless placeholders. Threat-intel files are **simulated** (offline), so you don't need real API keys.
+> Attachments are harmless placeholders. Threat-intel files are **simulated** (offline), so there's no real API keys.
 
 ---
 
