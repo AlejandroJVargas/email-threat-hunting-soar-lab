@@ -1,0 +1,207 @@
+[
+  {
+    "file": "01_cred_phish_mailbox.eml",
+    "from": "Microsoft 365 Security <no-reply@m365-secure-login.com>",
+    "to": "ana.perez@lumenfield.com",
+    "subject": "Action required: Unusual sign-in attempt blocked",
+    "reply_to": "support@m365-secure-login.com",
+    "return_path": "bounce@m365-secure-login.com",
+    "date": "Mon, 05 Oct 2026 02:14:00 -0300",
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "sender_ip": "45.153.160.12",
+    "urls": [
+      "https://m365-secure-login.com/auth/verify?u=YW5hLnBlcmV6QGx1bWVuZmllbGQuY29t"
+    ],
+    "attachments": [],
+    "red_flags": [
+      "Email claims to be from Microsoft/Office"
+    ]
+  },
+  {
+    "file": "02_cred_phish_storage.eml",
+    "from": "Microsoft 365 Security <no-reply@o365-mailbox-alerts.net>",
+    "to": "tomas.vega@lumenfield.com",
+    "subject": "Your mailbox storage is full",
+    "reply_to": "support@o365-mailbox-alerts.net",
+    "return_path": "bounce@o365-mailbox-alerts.net",
+    "date": "Sat, 10 Oct 2026 23:41:00 -0300",
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "sender_ip": "89.38.97.44",
+    "urls": [
+      "https://portal.office.com/storage",
+      "https://o365-mailbox-alerts.net/auth/verify?u=dG9tYXMudmVnYUBsdW1lbmZpZWxkLmNvbQ=="
+    ],
+    "attachments": [],
+    "red_flags": [
+      "Email claims to be from Microsoft/Office"
+    ]
+  },
+  {
+    "file": "03_bec_bank_details.eml",
+    "from": "Laura Gomez - Andes Logistics <laura.gomez@andeslogistics.com.ar>",
+    "to": "accounts.payable@lumenfield.com",
+    "subject": "RE: Invoice #4471 - updated bank details",
+    "reply_to": "laura.gomez.andes@outlook.com",
+    "return_path": "laura.gomez@andeslogistics.com.ar",
+    "date": "Thu, 22 Oct 2026 03:42:00 -0300",
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "sender_ip": "185.220.101.47",
+    "urls": [],
+    "attachments": [
+      {
+        "name": "New_Bank_Details_44.pdf",
+        "type": "application/pdf",
+        "sha256": "1c01ef987fab4428c98219bb15e20b8162c6fa23e6dcedfdf33904b7b2611178"
+      }
+    ],
+    "red_flags": [
+      "Reply-To domain does not match From domain"
+    ]
+  },
+  {
+    "file": "04_malware_html_invoice.eml",
+    "from": "Billing <carla4821@invoices-311.top>",
+    "to": "martin.castro@lumenfield.com",
+    "subject": "Invoice 58213 overdue",
+    "reply_to": "(none)",
+    "return_path": "carla4821@invoices-311.top",
+    "date": "Wed, 14 Oct 2026 10:05:00 -0300",
+    "spf": "fail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "sender_ip": "113.161.4.90",
+    "urls": [],
+    "attachments": [
+      {
+        "name": "Invoice_58213.html",
+        "type": "text/html",
+        "sha256": "1bd90f2825ab21e33afc7a86033efd25235cd593a2abebcba170562f3c7f3102"
+      }
+    ],
+    "red_flags": [
+      "DMARC check failed",
+      "Suspicious attachment: Invoice_58213.html"
+    ]
+  },
+  {
+    "file": "05_ceo_spoof.eml",
+    "from": "\"Mariana Ibarra (CEO)\" <mariana.ibarra@lumenfield.com>",
+    "to": "lucas.romero@lumenfield.com",
+    "subject": "Quick favor - are you at your desk?",
+    "reply_to": "m.ibarra.ceo@protonmail.com",
+    "return_path": "bounce@mailer-47.xyz",
+    "date": "Tue, 27 Oct 2026 11:02:00 -0300",
+    "spf": "fail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "sender_ip": "102.89.34.118",
+    "urls": [],
+    "attachments": [],
+    "red_flags": [
+      "Reply-To domain does not match From domain",
+      "Return-Path domain does not match From domain",
+      "DMARC check failed"
+    ]
+  },
+  {
+    "file": "06_legit_internal.eml",
+    "from": "Sofia Ruiz <sofia.ruiz@lumenfield.com>",
+    "to": "diego.martin@lumenfield.com",
+    "subject": "Re: Q4 planning",
+    "reply_to": "(none)",
+    "return_path": "sofia.ruiz@lumenfield.com",
+    "date": "Thu, 08 Oct 2026 15:20:00 -0300",
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "sender_ip": "10.20.12.15",
+    "urls": [
+      "https://sharepoint.lumenfield.com/sites/team/412"
+    ],
+    "attachments": [],
+    "red_flags": []
+  },
+  {
+    "file": "07_legit_new_domain_event.eml",
+    "from": "Lumenfield Eventos <hola@lumenfield-eventos.com>",
+    "to": "pablo.diaz@lumenfield.com",
+    "subject": "Invitaci\u00f3n: Fin de a\u00f1o Lumenfield 2026",
+    "reply_to": "(none)",
+    "return_path": "bounce@lumenfield-eventos.com",
+    "date": "Fri, 23 Oct 2026 09:30:00 -0300",
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "sender_ip": "181.47.12.90",
+    "urls": [
+      "https://lumenfield-eventos.com/rsvp?id=5521"
+    ],
+    "attachments": [],
+    "red_flags": []
+  },
+  {
+    "file": "08_legit_newsletter.eml",
+    "from": "Tech Digest <newsletter@techdigest-weekly.com>",
+    "to": "juan.lopez@lumenfield.com",
+    "subject": "This week in security",
+    "reply_to": "(none)",
+    "return_path": "bounce@techdigest-weekly.com",
+    "date": "Wed, 14 Oct 2026 09:00:00 -0300",
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "sender_ip": "52.96.14.20",
+    "urls": [
+      "https://techdigest-weekly.com/issue/214",
+      "https://techdigest-weekly.com/unsubscribe"
+    ],
+    "attachments": [],
+    "red_flags": []
+  },
+  {
+    "file": "09_bulk_spam.eml",
+    "from": "Winner Notice <promo512@winbig47.xyz>",
+    "to": "micaela.sosa@lumenfield.com",
+    "subject": "You won a prize!!!",
+    "reply_to": "(none)",
+    "return_path": "promo512@winbig47.xyz",
+    "date": "Mon, 19 Oct 2026 04:12:00 -0300",
+    "spf": "softfail",
+    "dkim": "none",
+    "dmarc": "fail",
+    "sender_ip": "36.110.14.201",
+    "urls": [
+      "http://winbig47.xyz/claim"
+    ],
+    "attachments": [],
+    "red_flags": [
+      "DMARC check failed"
+    ]
+  },
+  {
+    "file": "10_cred_phish_password.eml",
+    "from": "Microsoft 365 Security <no-reply@m365-session-guard.com>",
+    "to": "natalia.luna@lumenfield.com",
+    "subject": "Password expires in 24 hours",
+    "reply_to": "support@m365-session-guard.com",
+    "return_path": "bounce@m365-session-guard.com",
+    "date": "Mon, 12 Oct 2026 01:07:00 -0300",
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "sender_ip": "91.240.118.9",
+    "urls": [
+      "https://m365-session-guard.com/auth/verify?u=bmF0YWxpYS5sdW5hQGx1bWVuZmllbGQuY29t"
+    ],
+    "attachments": [],
+    "red_flags": [
+      "Email claims to be from Microsoft/Office"
+    ]
+  }
+]

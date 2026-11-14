@@ -1,0 +1,19 @@
+Received: from mta3.techdigest-weekly.com ([52.96.14.20]) by
+ mx1.lumenfield.com with ESMTPS; Wed, 14 Oct 2026 09:00:05 -0300
+Authentication-Results: mx1.lumenfield.com; spf=pass
+ smtp.mailfrom=techdigest-weekly.com; dkim=pass
+ header.d=techdigest-weekly.com; dmarc=pass header.from=techdigest-weekly.com
+Return-Path: bounce@techdigest-weekly.com
+From: "Tech Digest" <newsletter@techdigest-weekly.com>
+To: juan.lopez@lumenfield.com
+Subject: This week in security
+Date: Wed, 14 Oct 2026 09:00:00 -0300
+Message-ID: <303301427876@techdigest-weekly.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+This week: new phishing kits, patch roundup, and more.
+Read online: https://techdigest-weekly.com/issue/214
+
+Unsubscribe: https://techdigest-weekly.com/unsubscribe

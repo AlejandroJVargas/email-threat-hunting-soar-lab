@@ -1,0 +1,22 @@
+Received: from mail.lumenfield-eventos.com ([181.47.12.90]) by
+ mx1.lumenfield.com with ESMTPS; Fri, 23 Oct 2026 09:30:02 -0300
+Authentication-Results: mx1.lumenfield.com; spf=pass
+ smtp.mailfrom=lumenfield-eventos.com; dkim=pass
+ header.d=lumenfield-eventos.com; dmarc=pass
+ header.from=lumenfield-eventos.com
+Return-Path: bounce@lumenfield-eventos.com
+From: "Lumenfield Eventos" <hola@lumenfield-eventos.com>
+To: pablo.diaz@lumenfield.com
+Subject: =?utf-8?q?Invitaci=C3=B3n=3A_Fin_de_a=C3=B1o?= Lumenfield 2026
+Date: Fri, 23 Oct 2026 09:30:00 -0300
+Message-ID: <244835752617@lumenfield-eventos.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+MIME-Version: 1.0
+
+¡Hola!
+
+Te invitamos a la fiesta de fin de año de Lumenfield, el 12 de diciembre.
+Confirmá tu asistencia: https://lumenfield-eventos.com/rsvp?id=5521
+
+Equipo de RRHH

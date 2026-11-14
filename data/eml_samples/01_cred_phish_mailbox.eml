@@ -1,0 +1,43 @@
+Received: from mail.m365-secure-login.com (mail.m365-secure-login.com
+ [45.153.160.12]) by mx1.lumenfield.com with ESMTPS; Mon, 05 Oct 2026 02:14:09
+ -0300
+Authentication-Results: mx1.lumenfield.com; spf=pass
+ smtp.mailfrom=m365-secure-login.com; dkim=pass
+ header.d=m365-secure-login.com; dmarc=pass header.from=m365-secure-login.com
+Return-Path: bounce@m365-secure-login.com
+From: "Microsoft 365 Security" <no-reply@m365-secure-login.com>
+To: ana.perez@lumenfield.com
+Reply-To: support@m365-secure-login.com
+Subject: Action required: Unusual sign-in attempt blocked
+Date: Mon, 05 Oct 2026 02:14:00 -0300
+Message-ID: <973316749750@m365-secure-login.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============3509470055381923501=="
+
+--===============3509470055381923501==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi ana.perez,
+
+We blocked a sign-in attempt to your account from an unknown device in Lagos,=
+ Nigeria.
+If this wasn't you, review your activity now:
+
+https://m365-secure-login.com/auth/verify?u=3DYW5hLnBlcmV6QGx1bWVuZmllbGQuY29t
+
+If you don't review within 12 hours, your account will be suspended.
+
+Microsoft 365 Security Team
+
+--===============3509470055381923501==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<p>Hi ana.perez,</p><p>We blocked a sign-in attempt from an unknown device in=
+ Lagos, Nigeria.</p><p><a href=3D"https://m365-secure-login.com/auth/verify?u=
+=3DYW5hLnBlcmV6QGx1bWVuZmllbGQuY29t">Review activity</a></p>
+
+--===============3509470055381923501==--

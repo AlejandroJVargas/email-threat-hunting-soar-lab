@@ -1,0 +1,35 @@
+Received: from mail.o365-mailbox-alerts.net ([89.38.97.44]) by
+ mx1.lumenfield.com with ESMTPS; Sat, 10 Oct 2026 23:41:55 -0300
+Authentication-Results: mx1.lumenfield.com; spf=pass
+ smtp.mailfrom=o365-mailbox-alerts.net; dkim=pass
+ header.d=o365-mailbox-alerts.net; dmarc=pass
+ header.from=o365-mailbox-alerts.net
+Return-Path: bounce@o365-mailbox-alerts.net
+From: "Microsoft 365 Security" <no-reply@o365-mailbox-alerts.net>
+To: tomas.vega@lumenfield.com
+Reply-To: support@o365-mailbox-alerts.net
+Subject: Your mailbox storage is full
+Date: Sat, 10 Oct 2026 23:41:00 -0300
+Message-ID: <360087481637@o365-mailbox-alerts.net>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============7403707721797890231=="
+
+--===============7403707721797890231==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Your mailbox is 99% full. Incoming messages will be rejected.
+
+Upgrade storage: (see HTML version)
+
+--===============7403707721797890231==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<p>Your mailbox is 99% full.</p><p><a href=3D"https://o365-mailbox-alerts.net=
+/auth/verify?u=3DdG9tYXMudmVnYUBsdW1lbmZpZWxkLmNvbQ=3D=3D">https://portal.off=
+ice.com/storage</a></p>
+
+--===============7403707721797890231==--

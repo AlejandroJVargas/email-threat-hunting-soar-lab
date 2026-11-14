@@ -1,0 +1,23 @@
+Received: from mail01.lumenfield.com ([10.20.12.15]) by mx1.lumenfield.com
+ with ESMTPS; Thu, 08 Oct 2026 15:20:11 -0300
+Authentication-Results: mx1.lumenfield.com; spf=pass
+ smtp.mailfrom=lumenfield.com; dkim=pass header.d=lumenfield.com; dmarc=pass
+ header.from=lumenfield.com
+Return-Path: sofia.ruiz@lumenfield.com
+From: "Sofia Ruiz" <sofia.ruiz@lumenfield.com>
+To: diego.martin@lumenfield.com
+Subject: Re: Q4 planning
+Date: Thu, 08 Oct 2026 15:20:00 -0300
+Message-ID: <238365021867@lumenfield.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Hi Diego,
+
+I updated the Q4 numbers in the shared folder:
+https://sharepoint.lumenfield.com/sites/team/412
+
+Let me know if anything looks off.
+
+Sofia

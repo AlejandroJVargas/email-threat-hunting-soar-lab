@@ -1,0 +1,39 @@
+Received: from mail.andeslogistics.com.ar ([185.220.101.47]) by
+ mx1.lumenfield.com with ESMTPS; Thu, 22 Oct 2026 03:42:18 -0300
+Authentication-Results: mx1.lumenfield.com; spf=pass
+ smtp.mailfrom=andeslogistics.com.ar; dkim=pass
+ header.d=andeslogistics.com.ar; dmarc=pass header.from=andeslogistics.com.ar
+Return-Path: laura.gomez@andeslogistics.com.ar
+From: "Laura Gomez - Andes Logistics" <laura.gomez@andeslogistics.com.ar>
+To: accounts.payable@lumenfield.com
+Reply-To: laura.gomez.andes@outlook.com
+Subject: RE: Invoice #4471 - updated bank details
+Date: Thu, 22 Oct 2026 03:42:00 -0300
+Message-ID: <249644200804@andeslogistics.com.ar>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============8159207647485207702=="
+
+--===============8159207647485207702==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi team,
+
+As discussed, our bank account has changed due to an internal audit.
+Please make the payment for invoice #4471 ($18,450) to our new account before=
+ Friday to avoid late fees. Details attached.
+
+Please confirm once done. I'm in meetings all day, so email only.
+
+Laura Gomez
+Accounts Department, Andes Logistics
+
+--===============8159207647485207702==
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="New_Bank_Details_44.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjQgVFJBSU5JTkcgUExBQ0VIT0xERVIgLSBubyByZWFsIGNvbnRlbnQ=
+
+--===============8159207647485207702==--
