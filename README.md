@@ -1,6 +1,6 @@
 # Email Threat Hunting & Phishing Triage Automation Lab
 
-**Scenario:** I'm a SOC analyst at **Lumenfield** (fictional company, `lumenfield.com`, ~420 employees, Córdoba, Argentina).
+**Scenario:** At **Lumenfield** (fictional company, `lumenfield.com`, ~420 employees, Córdoba, Argentina).
 Several employees reported suspicious emails during October 2026, and the finance team is worried about a supplier payment.
 Management suspects the current email filter is missing attacks.
 
