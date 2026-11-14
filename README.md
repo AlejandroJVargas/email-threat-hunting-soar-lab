@@ -123,14 +123,6 @@ Document the playbook with a diagram and screenshots.
 
 Write `docs/incident_report.md`: executive summary, timeline, campaigns, IOCs, filter performance (before vs after your detections), recommendations.
 
----
-
-## Rules for this lab
-
-- Write the code yourself. Use AI as a teacher ("how do I…?", "why does this fail?"), not as the author.
-- Every number in your report must come from a query you can show.
-- Commit often with clear messages; the history shows your progress.
-
 ## Suggested repo layout
 
 ```
