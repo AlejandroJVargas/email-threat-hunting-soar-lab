@@ -87,7 +87,7 @@ For each rule, measure on the dataset:
 |---|---|
 | Hits | How many emails it flags |
 | True positives / False positives | You'll validate these with your hunting results (and Claude has the answer key) |
-| What it misses | Be honest |
+
 
 
 ### Phase 5: SOAR playbook — 1 week
