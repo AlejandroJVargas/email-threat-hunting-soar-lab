@@ -86,7 +86,7 @@ For each rule, measure on the dataset:
 | Metric | Meaning |
 |---|---|
 | Hits | How many emails it flags |
-| True positives / False positives | You'll validate these with your hunting results (and Claude has the answer key) |
+| True positives / False positives | Validated these with the hunting results |
 
 
 
@@ -103,7 +103,7 @@ User reports email → parse (Phase 1) → enrich + score (Phase 3)
 
 ### Phase 6: Report
 
-Write `docs/incident_report.md`: executive summary, timeline, campaigns, IOCs, filter performance (before vs after your detections), recommendations.
+Writed `docs/incident_report.md`: executive summary, timeline, campaigns, IOCs, filter performance (before vs after your detections), recommendations.
 
 ## Suggested repo layout
 
