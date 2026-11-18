@@ -1,0 +1,4 @@
+`comment("PHISH-02 Cred Phishing Brand Impersonation | Severity: High | Expected: 8 domains x 225 = 1,800")`
+index=phishing display_name="*Microsoft*" sender_domain!="*microsoft.com"
+| stats count dc(recipient) AS victims by sender_domain
+| sort -count
