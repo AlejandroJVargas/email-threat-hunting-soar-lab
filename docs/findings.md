@@ -123,7 +123,7 @@ Dataset: 99,042 emails (2026-10-01 to 2026-10-30). Tool: SQL (SQLite).
 
 **Note:** lumenfield.com also appears in the spam results (146 emails), but those are the spoofed CEO emails from finding 5. Blocking them was correct.
 
-**Lesson:** the filter judged each sender by one signal alone (domain age or volume). Decisions need several signals combined.
+**Conclusion:** the filter judged each sender by a single signal (domain age or volume). Reliable decisions require several signals combined.
 
 ---
 
@@ -179,9 +179,9 @@ signals (yes/no) → weighted score → decision → evaluation against ground t
 - **0 legitimate emails blocked**
 - lumenfield-eventos.com (new but legit domain) was sent to analyst review, not blocked
 
-### Key finding: the first version missed BEC
+### Tuning: BEC coverage
 
-| | Version 1 | Version 2 |
+| | Initial weights | Tuned weights (+ `payment_keywords`) |
 |---|---|---|
 | Attacks allowed | **30** (all BEC) | **0** |
 | Legit emails blocked | 0 | 0 |
@@ -201,10 +201,10 @@ destination** matched all 42 BEC emails and 0 legit emails.
 details. These emails go to analyst review so a human can verify by phone
 (out-of-band verification) instead of auto-blocking.
 
-**Lesson:** domain reputation cannot detect compromised legitimate senders.
+**Conclusion:** domain reputation cannot detect compromised legitimate senders.
 Behavioral and content signals are required.
 
-### Limitations and next steps
+### Next steps
 - Analyst queue is ~98 emails/day (2,937 in 30 days), mostly malware scoring
   35–55. Next: tune malware thresholds to reduce alert fatigue.
 - `unusual_country` signal (e.g. .com.ar domain sending from NL) would add a
@@ -249,7 +249,7 @@ keyword in a detection was tested against known data.
 - DMARC failures by country: NG 2,208, RU 2,168, VN 2,065, CN 2,004 (campaigns);
   US 73, BR 68 (likely misconfigured legit senders).
 
-### Limitations
+### Environment notes
 - Splunk Free does not support scheduled searches or alerts; detections are saved
   as reports. In production they would run hourly and send Critical/High alerts
   to the SOAR playbook (Phase 5).
@@ -293,7 +293,7 @@ handled in seconds instead of waiting for an analyst at 09:00.
 
 All three branches were tested; only the matching branch ran each time.
 
-### Limitations and next steps
+### Next steps
 - Splunk Free cannot send alerts, so alerts were sent manually to the webhook
   (simulating Splunk). In production, the PHISH-01 alert would call the webhook.
 - The webhook has no authentication in the lab. In production, add a secret

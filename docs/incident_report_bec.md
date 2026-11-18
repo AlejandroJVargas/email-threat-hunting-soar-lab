@@ -128,9 +128,9 @@ after a few days, so this must be checked immediately.
 
 ---
 
-## 9. Lessons Learned
+## 9. Post-Incident Review
 
 - **Authentication is not trust.** A real account passes every authentication check; detection must also look at behavior.
 - **One signal is never enough.** The domain looked clean; the combination of country, hour and payment topic exposed the attack.
-- **Test detections against known data.** The first scoring engine missed 30 of 42 emails, and one missing keyword dropped 14 emails from the Splunk detection.
+- **Detections are validated against known data.** Validation showed that domain-based signals alone left 30 of 42 BEC emails below the review threshold, and that every payment keyword was needed (removing one dropped 14 emails from the Splunk detection).
 - **A human check is the right control for payments.** The playbook sends real bank changes to an analyst for phone verification instead of blocking them.
