@@ -1,0 +1,3 @@
+`comment("PHISH-01 BEC Compromised Vendor | Severity: Critical | Expected: 42 emails, 18 victims, NL")`
+index=phishing (subject="*bank details*" OR subject="*remittance*" OR subject="*payment details*") sender_domain="*.com.ar" sender_country!=AR
+| stats count dc(recipient) AS victims values(sender_country) AS countries by sender_domain

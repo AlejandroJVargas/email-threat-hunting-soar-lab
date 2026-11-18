@@ -1,0 +1,3 @@
+`comment("PHISH-04 CEO Spoof DMARC Fail | Severity: Critical | Expected: 300 emails, 213 victims, NG/RU")`
+index=phishing sender_domain=lumenfield.com dmarc=fail
+| stats count dc(recipient) AS victims values(sender_country) AS countries by sender reply_to
